@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mr."
+title                    : "Pai Peng"
 title_separator          : "-"
 name                     : &name "Pai Peng"
 description              : &description "A website for my portfolio."
@@ -62,7 +62,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "images/site-logo.png" # Open Graph/Twitter default site image
+og_image                 : "site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Pai Peng"
-  avatar           : "images/bio-photo.png"
+  avatar           : "bio-photo.png"
   bio              : "MSc Computer Engineering @ The University of Edinburgh"
   location         : "United Kingdom"
   employer         :
