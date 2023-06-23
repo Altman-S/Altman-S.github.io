@@ -9,23 +9,59 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**[Intropic](https://www.linkedin.com/company/intropic-io/), SWE Intern**
+
++ a
++ b
++ c
+
+
+
+Education
+======
+
+**The University of Edinburgh - School of Informatics**
+
+Master's degree, Computer Engineering
+
+Sep 2021 - Dec 2022, Edinburgh, United Kingdom
+
+
+**Nanjing University of Science and Technology**
+
+Bachelor's degree, Robotics and Automation Engineering
+
+Sep 2017 - Jun 2021, Nanjing, China
+
+
+Below is a brief list of the core courses I have taken so far:
+
+**Computer Science:**
+
++ Search Engine
++ Cloud Computing
++ Applied Machine Learning
++ Advanced Database Systems
++ Computer Networking
++ Operating Systems
++ Computer System Organization
++ Object-Oriented Design
++ Algorithm
++ Data Structure
+
+**Mathematics:**
+
++ Theory of Probability
++ Stochastic Calculus
++ Stochastic Process
++ Mathematical Statistics
++ Abstract Algebra
++ Linear Algebra
++ Analysis
+
   
 Skills
 ======
