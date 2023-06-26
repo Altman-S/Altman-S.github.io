@@ -9,33 +9,34 @@ redirect_from:
 
 {% include base_path %}
 
-Work experience
-======
+The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0407.pdf).
 
-**[Intropic](https://www.linkedin.com/company/intropic-io/), SWE Intern**
+---
 
-+ a
-+ b
-+ c
+# Work experience
 
++ **[Intropic](https://intropic.io), Software Engineer Intern**
+  - a
+  - b
+  - c
 
+---
 
-Education
-======
+# Education
 
 **The University of Edinburgh - School of Informatics**
-
-Master's degree, Computer Engineering
-
-Sep 2021 - Dec 2022, Edinburgh, United Kingdom
++ Master's degree, Computer Engineering
++ Sep 2021 - Dec 2022, Edinburgh, United Kingdom
 
 
 **Nanjing University of Science and Technology**
++ Bachelor's degree, Robotics and Automation Engineering
++ Sep 2017 - Jun 2021, Nanjing, China
++ Honors: China National Scholarship 2018 (Top 0.2% national-wide)
 
-Bachelor's degree, Robotics and Automation Engineering
+---
 
-Sep 2017 - Jun 2021, Nanjing, China
-
+...
 
 Below is a brief list of the core courses I have taken so far:
 
@@ -62,34 +63,10 @@ Below is a brief list of the core courses I have taken so far:
 + Linear Algebra
 + Analysis
 
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+
+
+
+
+
