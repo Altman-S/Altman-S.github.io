@@ -6,17 +6,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-  
-Hi, I am Pai Peng. I am currently a computer engineering graduate at The University of Edinburgh. 
 
-Education
-======
+Introducing Pai, a passionate software engineer with a strong foundation in key software engineering principles. I am particularly drawn to the fintech industry, where I aim to apply my knowledge and skills as a software engineer.
 
-+ **MSc in Computer Science**, The University of Edinburgh, *2021-2022*
-  + ...
+With expertise in algorithm and data structure, operating systems, database systems, and networking, I possess the necessary foundation to excel in this field. I have a specific interest in developing high-performance systems, a crucial aspect of trading systems within the fintech domain.
 
-+ **BEng in Computer Science**, Nanjing University of Science and Technology, *2017-2021*
-  + ...
+Driven by a desire to be part of the transformative advancements in fintech, I bring a combination of technical prowess and unwavering enthusiasm to my work. I am committed to continuous learning, embracing challenges, and staying abreast of cutting-edge technologies and industry trends.
 
+I invite you to explore my portfolio to see how my skills and passion align with the dynamic world of fintech. I am excited about the potential to contribute to an innovative organization that values technology-driven solutions.
+
+Let's connect and discuss how we can shape the future of finance through technology!
   
 
