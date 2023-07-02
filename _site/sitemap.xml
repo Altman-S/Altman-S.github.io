@@ -74,6 +74,9 @@
 <loc>http://localhost:4000/cv/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/life/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/markdown/</loc>
 </url>
 <url>
