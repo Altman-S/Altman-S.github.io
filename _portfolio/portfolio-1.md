@@ -1,6 +1,6 @@
 ---
 title: "Sponge – TCP Protocol Implementation"
-excerpt: "Short description of portfolio [item](https://github.com/Altman-S/CS144-Computer-Network) number 1<br/><img src='/images/projects/tcp_overall_design.png'>"
+excerpt: "Stanford CS144: TCP Protocol Implementation, click [here](https://github.com/Altman-S/CS144-Computer-Network)<br/><img src='/images/projects/tcp_overall_design.png'  width='70%'>"
 collection: portfolio
 ---
 

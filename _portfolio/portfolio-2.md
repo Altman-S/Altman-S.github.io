@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/projects/csapp_overview.png'>"
+title: "Computer Systems: A Programmer's Perspective"
+excerpt: "CMU CS 15-213: Introduction to Computer Systems, click [here](https://github.com/Altman-S/CMU-15-213) <br/><img src='/images/projects/csapp_overview.png' width='70%'>"
 collection: portfolio
 ---
 
