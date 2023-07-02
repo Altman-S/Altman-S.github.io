@@ -42,7 +42,7 @@ The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0407.pdf).
 
 ---
 
-...
+Through my extensive study and past projects, I have acquired proficiency in diverse programming languages and technologies, such as Python, Java, and C++. This versatile skillset equips me to seamlessly adapt to the Software Engineer role and quickly grasp new technologies, should the need arise. I am confident in my ability to hit the ground running and contribute effectively from the start, leveraging my breadth of experience to drive success in the role.
 
 Below is a brief list of the core courses I have taken so far:
 
