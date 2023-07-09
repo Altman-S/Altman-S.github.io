@@ -4,4 +4,8 @@ excerpt: "Stanford CS144: TCP Protocol Implementation, click [here](https://gith
 collection: portfolio
 ---
 
-This is the implementation of a TCP (Transmission Control Protocol) in modern C++ called Sponge from Stanford University, which helps to establish a bi-directional reliable in-order data transfer between two endpoints on the Transfer layer in term of the 4-layer network abstraction. Key highlights includes: three-way/four-way handshake(SYN/FIN), segment reordering(stream reassembler), flow control(sliding window), retransmission control(exponential backoff), state transition(finite state machine), etc.
+---
+
+This is the implementation of a **TCP (Transmission Control Protocol)** in modern C++ called Sponge from Stanford University, which helps to establish a bi-directional reliable in-order data transfer between two endpoints on the Transfer layer in term of the 4-layer network abstraction.
+
+Key highlights includes: three-way/four-way handshake(SYN/FIN), segment reordering(stream reassembler), flow control(sliding window), retransmission control(exponential backoff), state transition(finite state machine), etc.

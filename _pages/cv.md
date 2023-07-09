@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0407.pdf).
+The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0709.pdf).
 
 ---
 
 # Work experience
 
-<img align="left" decoding="async" src="/images/CV/intropic.jpeg" width="6%"> &nbsp; **[Intropic](https://intropic.io), Software Engineer Intern**
+<a href="https://intropic.io"><img align="left" decoding="async" src="/images/CV/intropic.jpeg" width="6%"></a> &nbsp; **[Intropic](https://intropic.io), Software Engineer Intern**
 <br>&nbsp; Jul 2023 - Sep 2023, London, United Kingdom
 
 + Developing software applications, forecast models and data products.
@@ -25,7 +25,7 @@ The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0407.pdf).
 
 # Education
 
-<img align="left" decoding="async" src="/images/CV/edinburgh.png" width="6%"> &nbsp; **The University of Edinburgh - School of Informatics**
+<a href="https://www.linkedin.com/school/university-of-edinburgh/"><img align="left" decoding="async" src="/images/CV/edinburgh.png" width="6%"></a> &nbsp; **The University of Edinburgh - School of Informatics**
 <br>&nbsp; Master's degree, Computer Engineering
 
 + Key Courses: Distributed Systems, Database Systems, Applied Machine Learning
@@ -33,7 +33,7 @@ The pdf version is [here](https://altman-s.github.io/files/PaiPeng_CV_0407.pdf).
 
 
 
-<img align="left" decoding="async" src="/images/CV/njust.jpeg" width="6%"> &nbsp; **Nanjing University of Science and Technology**
+<a href="https://www.linkedin.com/school/南京理工大学/"><img align="left" decoding="async" src="/images/CV/njust.jpeg" width="6%"></a> &nbsp; **Nanjing University of Science and Technology**
 <br>&nbsp; Bachelor's degree, Robotics and Automation Engineering
 
 + Key Courses: Operating Systems, Computer Networking, Algorithm and Data Structure
